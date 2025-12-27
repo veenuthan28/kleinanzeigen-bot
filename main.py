@@ -12,7 +12,7 @@ from flask import Flask
 # --- KONFIGURATION ---
 # Wir holen den Token sicher aus den Umgebungsvariablen von Render
 TOKEN = os.environ.get('TOKEN') 
-CHECK_INTERVAL = 600  # Alle 10 Minuten (600 Sekunden)
+CHECK_INTERVAL = 60  # Alle 10 Minuten (600 Sekunden)
 
 # --- WEB SERVER (DAMIT ES NICHT EINSCHLÄFT) ---
 app = Flask('')
